@@ -1,5 +1,4 @@
 package br.com.fiap.banco;
-
 import java.io.Serializable;
 
 /**
@@ -66,7 +65,10 @@ public class Conta implements Serializable {
      * @return Saldo presente na conta em reais.
      */
     public double getSaldo() {
-        System.out.println("Saldo em conta corrente: R$ " + this.saldo);
         return this.saldo;
+    }
+
+    public void exibeSaldo() {
+        System.out.println("Saldo em conta: R$ " + this.saldo);
     }
 }
